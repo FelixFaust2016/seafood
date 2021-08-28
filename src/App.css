@@ -253,7 +253,7 @@ h3 {
     margin-top: 10px;
   }
 
-  .card_flex_wrapper{
+  .card_flex_wrapper {
     padding: 50px 30px;
   }
 }
@@ -262,5 +262,8 @@ h3 {
   .card_size {
     width: 100%;
     margin-top: 20px;
+  }
+  .btn_btn_container {
+    display: none;
   }
 }

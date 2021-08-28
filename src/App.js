@@ -50,7 +50,10 @@ const App = () => {
         <div className="general_container">
           <div className="card_header">
             <h2>EXTRAORDINARY DISHES</h2>
-            <Button label={"See More"} />
+            <div className="btn_btn_container">
+              {" "}
+              <Button label={"See More"} />
+            </div>
           </div>
           <div className="card_flex_container">
             <div className="card_size">
@@ -100,7 +103,7 @@ const App = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
       </p>
 
-      <div style={{paddingBottom:"50px"}} className="card_flex_wrapper">
+      <div style={{ paddingBottom: "50px" }} className="card_flex_wrapper">
         <div className="general_container">
           <div className="card_flex_container">
             <div className="card_size">
@@ -124,10 +127,10 @@ const App = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          paddingBottom: "50px"
+          paddingBottom: "50px",
         }}
       >
-        <Button label={"See More"}/>
+        <Button label={"See More"} />
       </div>
     </div>
   );
