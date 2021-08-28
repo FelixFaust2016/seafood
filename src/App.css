@@ -1,38 +1,266 @@
-.App {
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --btn_color: #deb448;
+  --text_color: #1f1f1f;
+}
+
+.general_container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background: var(--btn_color);
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 50px;
+  color: var(--text_color);
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 45px;
+  color: var(--text_color);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 35px;
+  color: var(--text_color);
+}
+
+.normal_text {
+  font-size: 14px;
+  color: var(--text_color);
+  line-height: 25px;
+}
+
+/* navigation section  */
+
+.navigation_wrapper {
+  padding: 30px 100px;
+  background-color: #fff;
+}
+
+.navigation_container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation_container p {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.navigation_container p:last-of-type {
+  padding-right: 30px;
+}
+
+/* banner section */
+.banner_wrapper {
+  padding: 40px 100px;
+}
+
+.banner_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.banner_text {
+  width: 40%;
+}
+
+.banner_text p {
+  margin-top: 10px;
+}
+
+.banner_imgs {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.banner_imgs img {
+  width: 100%;
+}
+
+/* jumbotron section */
+
+.jumbotron_wrapper {
+  padding: 0px 100px;
+  padding-bottom: 100px;
+}
+
+.jumbotron_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.jumbotron_text {
+  width: 40%;
+}
+
+.jumbotron_text p {
+  margin-top: 10px;
+}
+
+.jumbotron_img {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 50%;
+}
+
+.jumbotron_img img {
+  width: 100%;
+}
+
+/* cards */
+
+.card_flex_wrapper {
+  padding: 100px 100px;
+  padding-bottom: 100px;
+}
+
+.card_flex_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card_container {
+  width: calc(100% - 40px);
+  background: #fff;
+  padding: 20px;
+}
+
+.card_img {
+  width: 70%;
+}
+
+.card_img img {
+  width: 100%;
+}
+
+.card_text {
+  margin-top: 30px;
+}
+
+.card_container p {
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+.card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.chef_card_container {
+  width: 100%;
+}
+
+.chef_card_container main img {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+.chef_card_container main {
+  width: 100%;
+  height: auto;
+}
+
+.chef_card_container_text {
+  margin-top: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card_size {
+  width: 24%;
 }
+@media (max-width: 800px) {
+  /* navigation mobile */
+  .navigation_wrapper {
+    padding: 20px 40px;
+  }
+  .navigation_container p {
+    display: none;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /* banner section */
+  .banner_wrapper {
+    padding: 30px;
+  }
+
+  .banner_text {
+    width: 100%;
+  }
+
+  .banner_text h1,
+  .banner_text p {
+    text-align: center;
+  }
+
+  .banner_text button {
+    position: relative;
+    margin: 0px auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .banner_imgs {
+    display: none;
+  }
+
+  /* jumbotron section */
+  .jumbotron_wrapper {
+    padding: 0px 30px;
+  }
+
+  .jumbotron_text {
+    width: 100%;
+  }
+
+  .jumbotron_img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .card_size {
+    width: 48%;
+    margin-top: 10px;
+  }
+
+  .card_flex_wrapper{
+    padding: 50px 30px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 500px) {
+  .card_size {
+    width: 100%;
+    margin-top: 20px;
   }
 }
