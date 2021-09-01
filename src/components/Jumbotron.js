@@ -3,11 +3,12 @@ const Jumbotron = ({ direction, children, img }) => {
     <div className="jumbotron_wrapper">
       <div className="general_container">
         <div
+          data-aos="zoom-in"
           style={{ flexDirection: direction }}
           className="jumbotron_container"
         >
           <div className="jumbotron_text">{children}</div>
-          <div className="jumbotron_img">
+          <div data-aos="fade-down" className="jumbotron_img">
             <img src={img} alt={""} />
           </div>
         </div>

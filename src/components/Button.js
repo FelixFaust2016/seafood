@@ -1,5 +1,5 @@
 const Button = ({ label }) => {
-  return <button class="btn">{label}</button>;
+  return <button className="btn">{label}</button>;
 };
 
 export { Button };
